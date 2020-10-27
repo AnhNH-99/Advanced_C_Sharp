@@ -17,18 +17,24 @@ namespace BAITAP1
         /// The value of the parameter passed according to its data type
         /// If the parameter passed has no value, the default is idefault
         /// </returns>
+        /// 
+
+        // Bài này em không hiểu đề cho lắm
         static void Main(string[] args)
         {
-            Convert<int>(null);
+            Console.WriteLine(Convert<int>("", 0));
             Console.ReadKey();
         }
-        static void Convert<T>(T? a) where T : struct 
+        static T Convert<T>(object a, T idefault) where T : struct
         {
-            if (a == null)
-                Console.WriteLine("idefault");
+            if (String.IsNullOrEmpty(a.ToString()))
+            {
+                return idefault;
+            }
             else
-                Console.WriteLine("Value: " + a);
-        } // 2
-
+            {
+                return (T)System.Convert.ChangeType(a, typeof(T));
+            }
+        } 
     }
 }

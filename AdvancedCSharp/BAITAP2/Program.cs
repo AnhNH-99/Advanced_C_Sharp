@@ -33,19 +33,19 @@ namespace BAITAP2
                     {Type = "Modern", Color = "red", Country = "VN", Name = "Lamborghini", Price = "3"},
             };
             var result = from product in list
-                         where product.Name != "BMW"
-                         where product.Type == "Classic" && product.Color == "red" || product.Type == "Modern"
                          group product by new
                          {
                              product.Type,
                              product.Color,
                              product.Name
-                         } into customProduct
-                         let total = customProduct.Sum(x => double.Parse(x.Price))
+                         }
+                         into customProduct 
+                         where customProduct.Count() > 1
+                         let total = customProduct.Sum(x => Decimal.Parse(x.Price))
                          orderby total
                          let count = customProduct.Count()
                          let listCountry = customProduct.Select(x => x.Country)
-                         let listPrice = customProduct.OrderBy(x=>x.Price).Select(x => double.Parse(x.Price))
+                         let listPrice = customProduct.OrderBy(x=>x.Price).Select(x => Decimal.Parse(x.Price))
                          select new
                          {
                              type = customProduct.Key.Type,

@@ -1,7 +1,0 @@
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\bin\Debug\BAITAP3.exe.config
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\bin\Debug\BAITAP3.exe
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\bin\Debug\BAITAP3.pdb
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\obj\Debug\BAITAP3.csproj.CoreCompileInputs.cache
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\obj\Debug\BAITAP3.exe
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\obj\Debug\BAITAP3.pdb
-C:\Users\hoang\OneDrive\Máy tính\Hybrid-Technologies\Advanced_C_Sharp\AdvancedCSharp\BAITAP3\obj\Debug\BAITAP3.csprojAssemblyReference.cache
